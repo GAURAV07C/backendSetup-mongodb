@@ -8,7 +8,7 @@
     "dist": "npx tsc",
     "dev": "nodemon src/server.ts",
     "start": "node dist/server.js",
-    "lint": "eslint .",
+     "lint": "eslint . --config eslint.config.js",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
   },
