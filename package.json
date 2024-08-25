@@ -10,6 +10,8 @@
         "start": "node dist/server.js",
         "lint": "eslint . ",
         "lint:fix": "eslint .  --fix",
+        "format:check": "prettier . --check",
+        "format:fix": "prettier . --fix",
         "prepare": "husky"
     },
     "keywords": [
@@ -21,7 +23,8 @@
     "license": "ISC",
     "lint-staged": {
         "**/*": [
-            "npm run lint:fix"
+            "npm run lint:fix",
+            "npm run format:fix"
         ]
     },
     "devDependencies": {
