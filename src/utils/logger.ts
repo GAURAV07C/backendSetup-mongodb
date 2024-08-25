@@ -4,9 +4,12 @@ import { ConsoleTransportInstance, FileTransportInstance } from 'winston/lib/win
 import config from '../config/config'
 import path from 'path'
 import { EApplicationEnvironment } from '../constant/application'
-
+import * as sourceMapSupport from 'source-map-support'
 import { red, blue, yellow, green, magenta } from 'colorette'
 
+
+// Linking Trace Support
+sourceMapSupport.install()
 
 
 const colorizeLevel = (level: string) => {
