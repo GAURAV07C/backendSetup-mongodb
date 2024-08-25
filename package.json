@@ -14,10 +14,10 @@
   },
   "author": "Gaurav",
   "license": "ISC",
-  "lint-staged": {
-    "*.ts":[
+  "lint-staged":{
+    "*ts":[
       "npm run lint:fix"
-    ]
+  ]
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
