@@ -1,3 +1,5 @@
 node_modules
-.env
+.env.develpment
+.env.production
 dist
+logs
