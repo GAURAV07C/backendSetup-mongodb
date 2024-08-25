@@ -1,0 +1,5 @@
+echo "Script started"
+. "$(dirname "$0")/_husky.sh"
+echo "Sourced _husky.sh"
+npx --no-install commitlint --edit "$1"
+echo "Ran commitlint"
