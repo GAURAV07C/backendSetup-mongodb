@@ -1,41 +1,42 @@
 {
-  "name": "node-setup",
-  "version": "1.0.0",
-  "description": "A Node.js setup with TypeScript",
-  "main": "src/server.ts",
-  "scripts": {
-    "test": "echo 'No tests available'",
-    "dist": "npx tsc",
-    "dev": "nodemon src/server.ts",
-    "start": "node dist/server.js",
-     "lint": "eslint . ",
-    "lint:fix": "eslint .  --fix",
-    "prepare": "husky"
-  },
-  "keywords": [
-    "node",
-    "typescript",
-    "setup"
-  ],
-  "author": "Gaurav",
-  "license": "ISC",
-
-  "lint-staged": {
-    "**/*": [
-      "npm run lint:fix"
-    ]
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@eslint/js": "^9.9.1",
-    "@types/eslint__js": "^8.42.3",
-    "@types/node": "^22.5.0",
-    "eslint": "^9.9.1",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.2.0"
-  }
+    "name": "node-setup",
+    "version": "1.0.0",
+    "description": "A Node.js setup with TypeScript",
+    "main": "src/server.ts",
+    "scripts": {
+        "test": "echo 'No tests available'",
+        "dist": "npx tsc",
+        "dev": "nodemon src/server.ts",
+        "start": "node dist/server.js",
+        "lint": "eslint . ",
+        "lint:fix": "eslint .  --fix",
+        "prepare": "husky"
+    },
+    "keywords": [
+        "node",
+        "typescript",
+        "setup"
+    ],
+    "author": "Gaurav",
+    "license": "ISC",
+    "lint-staged": {
+        "**/*": [
+            "npm run lint:fix"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.4.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@eslint/js": "^9.9.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.5.0",
+        "eslint": "^9.9.1",
+        "eslint-config-prettier": "^9.1.0",
+        "husky": "^9.1.5",
+        "lint-staged": "^15.2.9",
+        "prettier": "3.3.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.2.0"
+    }
 }
