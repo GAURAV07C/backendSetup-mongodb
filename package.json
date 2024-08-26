@@ -16,7 +16,6 @@
         "prepare": "husky",
         "migrate:dev": "dotenvx run -f .env.development --  node script/migration.js",
         "migrate:prod": "dotenvx run -f .env.production -- node script/migration.js"
-
     },
     "keywords": [
         "node",

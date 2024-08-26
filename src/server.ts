@@ -15,7 +15,7 @@ const server = app.listen(config.PORT)
             }
         })
 
-        // initRateLimiter(connection)
+    //     // initRateLimiter(connection)
         logger.info(`RATE_LIMITER_INITIATED`)
 
 
@@ -25,7 +25,8 @@ const server = app.listen(config.PORT)
     logger.info(`APPLICATION_STARTED`, {
       meta: {
         PORT:config.PORT,
-        SERVER_URL: config.SERVER_URL
+        SERVER_URL: config.SERVER_URL,
+        // DATABASE_URL:config.DATABASE_URL
       }
     })
 
