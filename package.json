@@ -13,7 +13,10 @@
         "lint:fix": "eslint --fix",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --fix",
-        "prepare": "husky"
+        "prepare": "husky",
+        "migrate:dev": "dotenvx run -f .env.development --  node script/migration.js",
+        "migrate:prod": "dotenvx run -f .env.production -- node script/migration.js"
+
     },
     "keywords": [
         "node",
@@ -51,6 +54,8 @@
         "express": "^4.19.2",
         "mongoose": "^8.5.4",
         "source-map-support": "^0.5.21",
-        "winston": "^3.14.2"
+        "ts-migrate-mongoose": "^3.8.3",
+        "winston": "^3.14.2",
+        "winston-mongodb": "^5.1.1"
     }
 }
