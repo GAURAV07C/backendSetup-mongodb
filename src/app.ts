@@ -4,10 +4,21 @@ import router from './router/apiRouter';
 import globalErrorHandler from './middleware/globalErrorHandler';
 import httpError from './utils/httpError';
 import responseMessage from './constant/responceMessage'
+import helmet from 'helmet';
+import cors from 'cors'
 const app:Application = express();
 
 // middleWare
+app.use(helmet())
+app.use(
+    cors({
+        methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD'],
+        origin: ['https://client.com'],
+        credentials: true
+    })
+)
 app.use(express.json())
+
 app.use(express.static(path.join(__dirname, '../public')))
 
 
