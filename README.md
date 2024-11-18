@@ -1,0 +1,1 @@
+git commit -am 'feat: Commit setup'
