@@ -25,7 +25,7 @@ export default (err: Error | unknown, req: Request, errorStatusCode: number = 50
      // log
       logger.error(`CONTROLLER_ERROR`, {
         meta: errorObj
-    } )
+    } );
 
 
     // Production Env check

@@ -33,7 +33,7 @@ app.use((req: Request, _: Response, next: NextFunction) => {
     try {
         throw new Error(responseMessage .NOT_FOUND('route'))
     } catch (err) {
-        httpError(next, err, req, 404)
+        httpError(next, err, req, 404);
     }
 })
 

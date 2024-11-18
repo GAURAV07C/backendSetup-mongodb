@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo 'No tests available'",
         "build": "npx tsc",
-        "dev": "dotenvx run -f .env.development -- nodemon  src/server.ts",
+        "dev": "dotenvx run -f .env.development -- nodemon --legacy-watch  src/server.ts",
         "start": "dotenvx run -f .env.production -- node dist/server.js",
         "start:env:encrypt": "dotenvx encrypt -f .env.production",
         "lint": "eslint",
@@ -49,6 +49,7 @@
         "typescript-eslint": "^8.15.0"
     },
     "dependencies": {
+        "@dotenvx/dotenvx": "^1.24.2",
         "colorette": "^2.0.20",
         "cors": "^2.8.5",
         "dotenv": "^16.4.5",
