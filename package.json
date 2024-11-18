@@ -13,7 +13,7 @@
         "lint:fix": "eslint --fix",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --fix",
-        "prepare": "husky",
+        "prepare": "husky && husky install",
         "migrate:dev": "dotenvx run -f .env.development --  node script/migration.js",
         "migrate:prod": "dotenvx run -f .env.production -- node script/migration.js"
     },
@@ -41,7 +41,7 @@
         "@types/source-map-support": "^0.5.10",
         "eslint": "^9.9.1",
         "eslint-config-prettier": "^9.1.0",
-        "husky": "^9.1.5",
+        "husky": "^8.0.3",
         "lint-staged": "^15.2.10",
         "prettier": "3.3.3",
         "ts-node": "^10.9.2",
